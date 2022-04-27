@@ -1,0 +1,33 @@
+{
+  "name": "tailwinder",
+  "version": "1.0.0",
+  "description": "collection of components for tailwind",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/main.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/main.css --minify",
+    "alpinjs-dev": "npx esbuild index.js --outfile=dist/bundle.js --bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladimos/tailwinder.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss framework"
+  ],
+  "author": [],
+  "bugs": {
+    "url": "https://github.com/miladimos/tailwinder/issues"
+  },
+  "homepage": "https://github.com/miladimos/tailwinder#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.2",
+    "esbuild": "^0.14.38"
+  },
+  "license": "MIT"
+
+}
