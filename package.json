@@ -4,19 +4,36 @@
   "description": "collection of components for tailwind",
   "main": "src/index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/main.css --watch",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/main.css --minify",
+    "dev": "NODE_ENV=development && tailwindcss -i ./src/base.css -o ./dist/main.css --watch",
+    "build": "NODE_ENV=production && tailwindcss -i ./src/base.css -o ./dist/main.css --minify",
     "alpinjs-dev": "npx esbuild index.js --outfile=dist/bundle.js --bundle"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miladimos/tailwinder.git"
   },
+  "style": "dist/tailwinder.css",
   "keywords": [
     "tailwindcss",
-    "tailwindcss framework"
+    "tailwindcss framework",
+    "html",
+    "css",
+    "javascript",
+    "tailwind",
+    "tailwind components",
+    "tailwind elements",
+    "tailwind library",
+    "tailwind sections",
+    "tailwind css",
+    "tailwind ui",
+    "tailwind css react",
+    "tailwind css vue",
+    "tailwind css angular"
   ],
-  "author": [],
+  "author": "miladimos <miladimos@outlook.com>",
+  "contributors": [
+
+  ],
   "bugs": {
     "url": "https://github.com/miladimos/tailwinder/issues"
   },
