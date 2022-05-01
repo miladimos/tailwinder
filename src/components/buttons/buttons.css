@@ -3,3 +3,21 @@
     <div class="absolute inset-0 z-0 w-full h-full rounded-sm ring-4 ring-indigo-600 animate-pulse ring-opacity-60"></div>
     <span>Button Animated</span>
 </button> */
+
+/* .btn {
+    @apply font-bold py-2 px-4 rounded !important;
+} */
+
+/* .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+} */
+
+@layer components {
+    .btn-blue {
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    }
+
+    .test{
+        @apply bg-orange-500;
+    }
+}

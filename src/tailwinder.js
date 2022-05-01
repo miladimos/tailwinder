@@ -1,7 +1,19 @@
 import './components/components.css';
 
-// import Alpine from 'alpinejs';
+import Alpine from 'alpinejs';
+// import dropdown from './dropdown.js'
 
-// window.Alpine = Alpine;
+window.Alpine = Alpine;
 
-// Alpine.start();
+Alpine.data('dropdown', () => ({
+    open: false,
+
+    toggle() {
+        this.open = !this.open
+    }
+}));
+
+// Alpine.data('dropdown', dropdown)
+
+Alpine.start();
+

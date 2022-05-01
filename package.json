@@ -4,9 +4,11 @@
   "description": "collection of components for tailwind",
   "main": "src/index.js",
   "scripts": {
-    "dev": "NODE_ENV=development && tailwindcss -i ./src/base.css -o ./dist/main.css --watch",
+    "dev": "tailwindcss -i ./src/base.css -o ./dist/main.css --watch",
     "build": "NODE_ENV=production && tailwindcss -i ./src/base.css -o ./dist/main.css --minify",
-    "alpinjs-dev": "npx esbuild index.js --outfile=dist/bundle.js --bundle"
+    "post-build": "postcss ./src/base.css -o ./dist/main.css",
+    "alpine-dev": "npx esbuild src/tailwinder.js --outfile=dist/tailwinder.js --bundle  --minify --analyze --watch",
+    "alpine-build": "npx esbuild src/tailwinder.js --outfile=dist/tailwinder.min.js --bundle --minify --analyze "
   },
   "repository": {
     "type": "git",
@@ -31,21 +33,20 @@
     "tailwind css angular"
   ],
   "author": "miladimos <miladimos@outlook.com>",
-  "contributors": [
-
-  ],
+  "contributors": [],
   "bugs": {
     "url": "https://github.com/miladimos/tailwinder/issues"
   },
   "homepage": "https://github.com/miladimos/tailwinder#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
     "alpinejs": "^3.10.2",
-    "autoprefixer": "^10.4.5",
     "esbuild": "^0.14.38",
-    "postcss": "^8.4.12"
+    "postcss-cli": "^9.1.0"
   },
   "license": "MIT"
 }

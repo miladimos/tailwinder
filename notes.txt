@@ -5,6 +5,8 @@ https://github.com/xtendui/xtendui
 
 
 https://flowbite.com/
+https://flowbite.com/application-ui/preview/
+
 
 
 https://larainfo.com/tailwind-css
